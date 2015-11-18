@@ -1,0 +1,9 @@
+1. Create a simple encoding – decoding program, which reads the „key“ (a non-negative
+integer), which represents the offset/shift from the original value (e.g. key = 3  A is
+represented as D, B is represented as E, C is represented as F etc.).
+2. Create a program, which counts the number of words in a file.
+3. Create a program, which counts the number of words, which start and end with the same
+symbol.
+4. * Create a program, which reads a string and then determines, how many times the string
+occurs in a given input file. Ask the user, if the search should be case-sensitive (i.e. if the
+case-size of the letters matters).

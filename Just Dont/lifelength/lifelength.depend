@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1322582599 source:c:\users\killerwife\c source\lifelength\main.c
+	<stdio.h>
+	<stdlib.h>
+

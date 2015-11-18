@@ -1,0 +1,36 @@
+0       // service ID
+call    // service type
+80      //price per second in mCents (1mCent = 0.001 Cent)
+8       //time from
+17     //time to
+31     // days - in a form of the bitmask - Monday for the rightmost bit, Tuesday for the previous one etc. (e.g. 6 = Tuesday and Wednesday only)
+1       // service ID
+call    // service type
+30       //price per second in mCents (1mCent = 0.001 Cent)
+17     //time from
+8      //time to
+31    // days - in a form of the bitmask - Monday for the rightmost bit, Tuesday for the previous one etc. (e.g. 6 = Tuesday and Wednesday only)
+2       // service ID
+call    // service type
+10       //price per second in mCents (1mCent = 0.001 Cent)
+0       //time from
+24      //time to
+96     // days - in a form of the bitmask - Monday for the rightmost bit, Tuesday for the previous one etc. (e.g. 6 = Tuesday and Wednesday only)
+3       // service ID
+data  // service type
+1000       //price per 1 MB in mCents (1mCent = 0.001 Cent), 1 MB = 1 000 000 B
+0       //time from
+24      //time to
+127    // days - in a form of the bitmask - Monday for the rightmost bit, Tuesday for the previous one etc. (e.g. 6 = Tuesday and Wednesday only)
+4       // service ID
+SMS  // service type
+2000     //price per 1 SMS
+0        //time from
+24      //time to
+63     // days - in a form of the bitmask - Monday for the rightmost bit, Tuesday for the previous one etc. (e.g. 6 = Tuesday and Wednesday only)
+5       // service ID
+SMS  // service type
+500     //price per 1 SMS
+0        //time from
+24      //time to
+64     // days - in a form of the bitmask - Monday for the rightmost bit, Tuesday for the previous one etc. (e.g. 6 = Tuesday and Wednesday only)

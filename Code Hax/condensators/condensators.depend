@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1333293399 source:c:\users\killerwife\c source\condensators\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1327855820 source:c:\users\killerwife\c source\checkingofbrackets\main.c
+	<stdio.h>
+	<stdlib.h>
+

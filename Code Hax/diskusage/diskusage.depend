@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1328773300 source:c:\users\frantisek.kajanek\documents\diskusage\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1328811884 source:n:\diskusage\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1328811884 source:c:\users\killerwife\c source\diskusage\main.c
+	<stdio.h>
+	<stdlib.h>
+

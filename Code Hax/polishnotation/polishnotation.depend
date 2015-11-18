@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1327160564 source:c:\users\killerwife\c source\polishnotation\main.c
+	<stdio.h>
+	<stdlib.h>
+
