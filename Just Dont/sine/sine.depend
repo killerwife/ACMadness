@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1296577049 source:c:\users\killerwife\music\sine\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

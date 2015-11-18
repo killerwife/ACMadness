@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1404123663 source:d:\users\killerwife\c source\tp2\153\permalex2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

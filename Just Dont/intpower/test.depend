@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1315926726 source:c:\users\killerwife\music\test\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1315926726 source:e:\users\killerwife\c source\test\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

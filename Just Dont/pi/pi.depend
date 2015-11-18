@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1296576908 source:c:\users\killerwife\music\pi\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1404151660 source:d:\users\killerwife\c source\tp2\261\windowproperty\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

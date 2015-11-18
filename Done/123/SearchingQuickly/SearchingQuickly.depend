@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1404163883 source:d:\users\killerwife\c source\tp2\123\searchingquickly\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+

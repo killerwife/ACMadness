@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1403562548 source:d:\users\killerwife\c source\tp2\121\pipe filters\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
