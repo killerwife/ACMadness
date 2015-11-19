@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1382629358 source:c:\users\killerwife\c source\baudot\main.c
+	<stdio.h>
+	<stdlib.h>
+

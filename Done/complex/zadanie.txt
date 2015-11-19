@@ -1,0 +1,40 @@
+  Complex, difficult and complicated 
+Complex numbers are not only complex, but also complicated. So you would better try to solve another problem...
+
+
+We have a complex number, a + b * i, where i is the square root of -1. We want to make it simple (I mean, real), by raising it to a natural power. For example, complex number 2 + 2 * i, can be made simple by raising it to 4:
+
+(2 + 2 * i)4 = - 64
+You have to compute the smallest natural number, N, (zero is not included) such that (a + b * i)N is a real number. Besides, we require that the absolute value of (a + b * i)N is not bigger than 230.
+
+Input 
+
+The first line of the input contains an integer M, indicating the number of test cases.
+
+For each test case, there is a line with two integers a and b. a is the real part of the complex number, and b is the imaginary part.
+
+You can assume that -10000$ \le$a$ \le$10000, and -10000$ \le$b$ \le$10000.
+
+Output 
+
+For each test case, the output should consist of a single positive natural number N in one line, indicating the power such that (a + b * i)N is real and its absolute value is not greater than 230. If there is no solution, you have to output ``TOO COMPLICATED".
+
+Sample Input 
+
+ 
+5
+817 0
+2 2
+0 -1
+18 92
+-7 7
+Sample Output 
+
+ 
+1
+4
+2
+TOO COMPLICATED
+4
+
+

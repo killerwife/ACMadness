@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1390946523 source:d:\users\killerwife\c source\wormhole\main.c
+	<stdio.h>
+	<stdlib.h>
+

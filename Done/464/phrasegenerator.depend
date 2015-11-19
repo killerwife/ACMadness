@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1386262990 source:d:\users\killerwife\c source\phrasegenerator\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

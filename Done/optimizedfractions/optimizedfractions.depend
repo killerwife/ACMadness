@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1403985372 source:d:\users\killerwife\c source\optimizedfractions\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

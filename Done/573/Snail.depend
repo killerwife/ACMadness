@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1388408355 source:d:\users\killerwife\c source\snail\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1384254534 source:c:\users\killerwife\c++ source\streets\main.c
+	<stdio.h>
+	<stdlib.h>
+

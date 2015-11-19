@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1386281981 source:d:\users\killerwife\c source\cards\main.c
+	<stdio.h>
+	<stdlib.h>
+

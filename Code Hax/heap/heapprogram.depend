@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1328294039 source:c:\users\killerwife\c source\heapprogram\main.c
+	<stdio.h>
+	<stdlib.h>
+

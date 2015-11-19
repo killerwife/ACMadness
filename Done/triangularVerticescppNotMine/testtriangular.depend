@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1403778082 source:d:\users\killerwife\c source\testtriangular\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

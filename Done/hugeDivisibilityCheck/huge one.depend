@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1384265840 source:c:\users\killerwife\c source\huge one\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

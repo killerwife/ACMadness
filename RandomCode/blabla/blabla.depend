@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1399735625 source:d:\users\killerwife\c source\blabla\main.cpp
+	<algorithm>
+	<iostream>
+	<cstring>
+	<string>
+	<vector>
+	<cstdio>
+	<stack>
+	<queue>
+	<cmath>
+

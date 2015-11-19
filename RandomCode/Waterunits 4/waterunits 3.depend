@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1326654838 source:c:\users\killerwife\c source\waterunits 3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1326654840 source:f:\waterunits 4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1326654840 source:c:\users\killerwife\c source\waterunits 4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

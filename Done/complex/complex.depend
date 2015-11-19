@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1390943222 source:d:\users\killerwife\c source\complex\main.c
+	<stdio.h>
+	<stdlib.h>
+
