@@ -1,0 +1,31 @@
+﻿<Window x:Class="WPFHost.HostWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:viewModel="clr-namespace:ViewModel"
+    Title="Chat Service Host" Height="300" Width="300">
+    <Window.DataContext>
+        <viewModel:HostViewModel/>
+    </Window.DataContext>
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="LightSlateGray" Offset="0"/>
+                <GradientStop Color="White" Offset="0.5"/>
+                <GradientStop Color="LightSlateGray" Offset="0.9"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        
+        
+
+        <Label Height="28" Margin="10,93,0,0" Name="Label1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="67">Local IP:</Label>
+        <Label Margin="10,0,0,85" Name="Label2" HorizontalAlignment="Left" Width="67" Height="28" VerticalAlignment="Bottom">Listen Port:</Label>
+        <TextBox x:Name="TextBoxIP" Text="{Binding ConnectionIP, UpdateSourceTrigger=PropertyChanged}" Height="23" Margin="76,98,108,0" VerticalAlignment="Top" />
+        <TextBox x:Name="TextBoxPort" Text="{Binding ConnectionPort, UpdateSourceTrigger=PropertyChanged}" Margin="76,0,108,88" Height="23" VerticalAlignment="Bottom" />
+        <Button x:Name="ButtonStop" IsEnabled="{Binding ButtonStopVisibility, UpdateSourceTrigger=PropertyChanged}" Command="{Binding ButtonStopCommand}" HorizontalAlignment="Right" Margin="0,0,15,88" Width="82" Height="23" VerticalAlignment="Bottom">Stop</Button>
+        <Button x:Name="ButtonStart" IsEnabled="{Binding ButtonStartVisibility, UpdateSourceTrigger=PropertyChanged}" Command="{Binding ButtonStartCommand}" Height="23" HorizontalAlignment="Right" Margin="0,96,15,0" VerticalAlignment="Top" Width="82">Start</Button>
+        <Label x:Name="LabelStatus" Content="{Binding LabelStatus, UpdateSourceTrigger=PropertyChanged}" Margin="10,0,15,45" Height="28" VerticalAlignment="Bottom" />
+        <Label x:Name="LabelTitle" FontFamily="Jokerman" FontSize="20" Foreground="White" Height="37" Margin="10,18,15,0" VerticalAlignment="Top">Chat Service</Label>
+    </Grid>
+</Window>
+

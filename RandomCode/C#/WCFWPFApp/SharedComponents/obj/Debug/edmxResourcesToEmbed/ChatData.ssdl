@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ChatData.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ChatDataStoreContainer">
+    <EntitySet Name="ChatDataSet" EntityType="ChatData.Store.ChatDataSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ChatUsersSet" EntityType="ChatData.Store.ChatUsersSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ChatUsersChatData" Association="ChatData.Store.ChatUsersChatData">
+      <End Role="ChatUsers" EntitySet="ChatUsersSet" />
+      <End Role="ChatData" EntitySet="ChatDataSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ChatDataSet">
+    <Key>
+      <PropertyRef Name="RecTime" />
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" />
+    <Property Name="RecTime" Type="datetime" Nullable="false" />
+    <Property Name="Message" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Sender" Type="bigint" Nullable="false" />
+    <Property Name="ChatUsers_Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ChatUsersSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AvatarID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="ChatUsersChatData">
+    <End Role="ChatUsers" Type="ChatData.Store.ChatUsersSet" Multiplicity="1" />
+    <End Role="ChatData" Type="ChatData.Store.ChatDataSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ChatUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ChatData">
+        <PropertyRef Name="ChatUsers_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

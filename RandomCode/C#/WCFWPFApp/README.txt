@@ -1,0 +1,1 @@
+Po otvorení solutionu treba da restore nuget packages. Vymazal som entity framework lebo bol obrovskı.

@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPFClient.FileTransferClient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ViewModel"
+        mc:Ignorable="d"
+        Title="FileTransferClient" Height="154.709" Width="383.177">
+    <Window.DataContext>
+        <local:FtcViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="LightSlateGray" Offset="0"/>
+                <GradientStop Color="White" Offset="0.5"/>
+                <GradientStop Color="LightSlateGray" Offset="0.9"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <ProgressBar Value="{Binding Progress,UpdateSourceTrigger=PropertyChanged}" Height="25" Minimum="0" Maximum="{Binding ProgressMax,UpdateSourceTrigger=PropertyChanged}" Name="PbStatus" Margin="0,39,0,60" Background="Black"/>
+        <Button x:Name="BrowseButton" Command="{Binding BrowseButtonClick}" Visibility="{Binding BrowseButtonVisibility,UpdateSourceTrigger=PropertyChanged}" Content="Browse" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="SendButton" Command="{Binding SendButtonClick}" Visibility="{Binding SendButtonVisibility,UpdateSourceTrigger=PropertyChanged}" Content="Send" HorizontalAlignment="Left" Margin="151,10,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="FileNameLabel" Content="{Binding FileNameLabel,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="95"/>
+        <Label x:Name="DoneLabel" Content="{Binding DoneLabel,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="151,69,0,0" VerticalAlignment="Top" Width="218" Height="24"/>
+    </Grid>
+</Window>

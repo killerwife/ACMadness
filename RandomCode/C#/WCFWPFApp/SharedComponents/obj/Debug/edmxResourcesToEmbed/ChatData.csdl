@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ChatData" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="ChatDataContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ChatDataSet" EntityType="ChatData.ChatData" />
+    <EntitySet Name="ChatUsersSet" EntityType="ChatData.ChatUsers" />
+    <AssociationSet Name="ChatUsersChatData" Association="ChatData.ChatUsersChatData">
+      <End Role="ChatUsers" EntitySet="ChatUsersSet" />
+      <End Role="ChatData" EntitySet="ChatDataSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ChatData">
+    <Key>
+      <PropertyRef Name="RecTime" />
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="None" Type="Int64" />
+    <Property Name="RecTime" Type="DateTime" Nullable="false" />
+    <Property Name="Message" Type="String" Nullable="false" />
+    <Property Name="Sender" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="ChatUsers" Relationship="ChatData.ChatUsersChatData" FromRole="ChatData" ToRole="ChatUsers" />
+  </EntityType>
+  <EntityType Name="ChatUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" Nullable="false" />
+    <Property Name="AvatarID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ChatData" Relationship="ChatData.ChatUsersChatData" FromRole="ChatUsers" ToRole="ChatData" />
+  </EntityType>
+  <Association Name="ChatUsersChatData">
+    <End Type="ChatData.ChatUsers" Role="ChatUsers" Multiplicity="1" />
+    <End Type="ChatData.ChatData" Role="ChatData" Multiplicity="*" />
+  </Association>
+</Schema>
