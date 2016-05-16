@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1459638793 source:c:\githubcode\acmadness\randomcode\testscanf\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+

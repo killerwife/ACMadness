@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1444773250 source:e:\users\killerwife\c++ source\3n1\main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+

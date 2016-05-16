@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1459638894 source:c:\githubcode\acmadness\randomcode\bla\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1455267305 source:c:\githubcode\acmadness\code hax\linkedlist\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

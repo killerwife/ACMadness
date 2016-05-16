@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1445203748 source:e:\users\killerwife\c++ source\unidirectionaltsp\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+

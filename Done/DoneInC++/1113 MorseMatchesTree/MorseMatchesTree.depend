@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1444494479 source:e:\users\killerwife\c++ source\morsematchestree\main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
